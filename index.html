@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <div id="controls">
+        <button id="startButton">Iniciar</button>
+        <button id="pauseButton">Play / Pause</button>
+        <button id="resetButton">Reiniciar</button>
+        <button id="speedButton">Definir Velocidad</button>
+        <p id="score">Puntaje</p>
+        <p id="firma">Power by Ruben Lopez H</p>
+    </div>
+    <!--<div id="ButtonJuego">
+        <button id="arriba" onclick="changeDirection(0, -box)">⭡</button>
+        <button id="abajo" onclick="changeDirection(0, box)">⭣</button>
+        
+        <button id="izquierda" onclick="changeDirection(-box, 0)">⭠</button>
+        <button id="derecha" onclick="changeDirection(box, 0)">⭢</button>
+    </div>-->
+    <div id="ButtonJuego">
+        <div class="row">
+            <button id="arriba" onclick="changeDirection(0, -box)">⭡</button>
+        </div>
+        <div class="row">
+            <button id="izquierda" onclick="changeDirection(-box, 0)">⭠</button>
+            <button id="abajo" onclick="changeDirection(0, box)">⭣</button>
+            <button id="derecha" onclick="changeDirection(box, 0)">⭢</button>
+        </div>
+    </div>
+    <div id="space-of-gamer">
+    <script src="script.js"></script>
+    <!--</div>
+    <div id="ButtonJuego">
+    <button id="arriba">⭡</button>
+    <button id="abajo">⭣</button>
+    <button id="derecha">⭢</button>
+    <button id="izquierda">⭠</button>
+    </div>-->
+</body>
+</html>

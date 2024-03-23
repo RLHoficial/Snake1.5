@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    /*margin: 0;
+    padding: 0;
+    height: 100vh;*/
+    background-image: url('https://imgs.search.brave.com/UkYcoXmDcn_PilKIzpZqse5zoVLg3BFW1HaJ0qD3AAI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS8zNS82/My9IRmFrU3cuanBn');
+    background-size: cover;
+    background-position: center;
+}
+
+#game-container {
+    position: relative;
+}
+
+canvas {
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo transparente */
+}
+
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#ButtonJuego {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*#ButtonJuego button {
+    padding: 10px 20px;
+    margin-left: 10px; /* Cambiado de margin-right a margin-left */
+    /*background-color: #4CAF50;*/
+/*    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#ButtonJuego button:hover {
+    background-color: #45a049;
+}*/
+#ButtonJuego {
+    position: absolute;
+    bottom: 10px;
+    left: 50%; /* Centra el grupo de botones horizontalmente */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+#ButtonJuego button {
+    padding: 10px 20px;
+    margin: 5px; /* Añadido un pequeño margen entre los botones */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#ButtonJuego button:hover {
+    background-color: #45a049;
+}
+#score {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#score:hover {
+    background-color: #45a049;
+}
+
